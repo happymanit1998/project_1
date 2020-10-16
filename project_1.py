@@ -1,3 +1,4 @@
+#This is an awesome begginer game in python
 import pygame
 import time
 pygame.font.init()
@@ -150,7 +151,7 @@ class Cube:
         self.selected = False
 
     def draw(self, win):
-        fnt = pygame.font.SysFont("comicsans", 40)
+        fnt = pygame.font.SysFont("Calibri", 44)
 
         gap = self.width / 9
         x = self.col * gap
@@ -167,7 +168,7 @@ class Cube:
             pygame.draw.rect(win, (255, 0, 0), (x, y, gap, gap), 3)
 
     def draw_change(self, win, g=True):
-        fnt = pygame.font.SysFont("comicsans", 40)
+        fnt = pygame.font.SysFont("Calibri", 44)
 
         gap = self.width / 9
         x = self.col * gap
@@ -242,7 +243,7 @@ def format_time(secs):
 
 def main():
     win = pygame.display.set_mode((540, 600))
-    pygame.display.set_caption("Sudoku_by_Rimanshu_singh")
+    pygame.display.set_caption("Sudoku_by_Happy_Singh")
     board = Grid(9, 9, 540, 540, win)
     key = None
     run = True
@@ -309,7 +310,7 @@ def main():
                         key = None
 
                         if board.is_finished():
-                            print("Game over")
+                            print("Ahh Shit")
 
             if event.type == pygame.MOUSEBUTTONDOWN:
                 pos = pygame.mouse.get_pos()
